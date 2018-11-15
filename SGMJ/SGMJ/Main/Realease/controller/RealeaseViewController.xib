@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RealeaseViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3s-18-nGU">
+                    <rect key="frame" x="167.5" y="593" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="94B-Ob-P2Y"/>
+                        <constraint firstAttribute="width" constant="40" id="fDB-im-PUc"/>
+                    </constraints>
+                    <state key="normal" image="centerClose"/>
+                    <connections>
+                        <action selector="cancelBtnClick:" destination="-1" eventType="touchUpInside" id="yBd-82-wnt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发布推广" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxy-pr-tiw">
+                    <rect key="frame" x="41.5" y="528" width="52.5" height="18.5"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qF8-Oh-Wto">
+                    <rect key="frame" x="157.5" y="453" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="XUs-th-ShA"/>
+                        <constraint firstAttribute="height" constant="60" id="pfk-o3-K9y"/>
+                    </constraints>
+                    <state key="normal" image="cservice"/>
+                    <connections>
+                        <action selector="findServiceButtonClick:" destination="-1" eventType="touchUpInside" id="vRH-yB-GDg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发布需求" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW9-jj-x7K">
+                    <rect key="frame" x="161.5" y="528" width="52.5" height="18.5"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4S-F6-3VF">
+                    <rect key="frame" x="277.5" y="453" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="aoO-uh-Q9s"/>
+                        <constraint firstAttribute="height" constant="60" id="h1n-XT-kUJ"/>
+                    </constraints>
+                    <state key="normal" image="crelease"/>
+                    <connections>
+                        <action selector="releaseRequirementBtnClick:" destination="-1" eventType="touchUpInside" id="x6F-oB-Eb9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发布服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLu-Bd-bLa">
+                    <rect key="frame" x="281.5" y="528" width="52.5" height="18.5"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2y-VI-HW5">
+                    <rect key="frame" x="37.5" y="453" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="RAg-Lw-TAG"/>
+                        <constraint firstAttribute="width" constant="60" id="fFi-gD-act"/>
+                    </constraints>
+                    <state key="normal" image="advertising"/>
+                    <connections>
+                        <action selector="releaseAdvertiseBtnClick:" destination="-1" eventType="touchUpInside" id="mmC-t0-sDK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="R3s-18-nGU" firstAttribute="top" secondItem="qF8-Oh-Wto" secondAttribute="bottom" constant="80" id="BXt-2X-6bl"/>
+                <constraint firstItem="r4S-F6-3VF" firstAttribute="leading" secondItem="qF8-Oh-Wto" secondAttribute="trailing" constant="60" id="GgA-M3-sLK"/>
+                <constraint firstItem="fxy-pr-tiw" firstAttribute="centerX" secondItem="t2y-VI-HW5" secondAttribute="centerX" id="H5R-56-4gy"/>
+                <constraint firstItem="t2y-VI-HW5" firstAttribute="centerY" secondItem="qF8-Oh-Wto" secondAttribute="centerY" id="Ncx-jY-B2h"/>
+                <constraint firstItem="RLu-Bd-bLa" firstAttribute="top" secondItem="r4S-F6-3VF" secondAttribute="bottom" constant="15" id="ZBa-Z9-AqX"/>
+                <constraint firstItem="HW9-jj-x7K" firstAttribute="top" secondItem="qF8-Oh-Wto" secondAttribute="bottom" constant="15" id="aL7-g7-eFc"/>
+                <constraint firstItem="HW9-jj-x7K" firstAttribute="centerX" secondItem="qF8-Oh-Wto" secondAttribute="centerX" id="e8F-92-wvV"/>
+                <constraint firstItem="qF8-Oh-Wto" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i7G-Xh-NJL"/>
+                <constraint firstAttribute="bottom" secondItem="R3s-18-nGU" secondAttribute="bottom" constant="34" id="jRJ-hc-F8D"/>
+                <constraint firstItem="r4S-F6-3VF" firstAttribute="centerY" secondItem="qF8-Oh-Wto" secondAttribute="centerY" id="ke5-tS-T4w"/>
+                <constraint firstItem="R3s-18-nGU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n7m-VZ-byZ"/>
+                <constraint firstItem="fxy-pr-tiw" firstAttribute="centerY" secondItem="HW9-jj-x7K" secondAttribute="centerY" id="rWc-2E-RNC"/>
+                <constraint firstItem="RLu-Bd-bLa" firstAttribute="centerX" secondItem="r4S-F6-3VF" secondAttribute="centerX" id="rpC-Ko-5ez"/>
+                <constraint firstItem="qF8-Oh-Wto" firstAttribute="leading" secondItem="t2y-VI-HW5" secondAttribute="trailing" constant="60" id="wxr-wY-qDm"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="advertising" width="59" height="59"/>
+        <image name="centerClose" width="14" height="14"/>
+        <image name="crelease" width="59" height="59"/>
+        <image name="cservice" width="59" height="59"/>
+    </resources>
+</document>

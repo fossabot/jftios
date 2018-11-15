@@ -1,0 +1,6 @@
+framework module Pods_SGMJ {
+  umbrella header "Pods-SGMJ-umbrella.h"
+
+  export *
+  module * { export * }
+}

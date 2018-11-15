@@ -1,0 +1,44 @@
+platform:ios,'8.0'
+target 'SGMJ' do
+pod 'AFNetworking', '~>3.2.0'
+#pod 'BAButton','~>2.6.6'
+pod 'DZNEmptyDataSet' #无数据占位
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'RegexKitLite'
+pod 'MBProgressHUD'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'JPush'
+pod 'IQKeyboardManager'
+pod 'TZImagePickerController'
+#pod 'SDCycleScrollView'
+pod 'BaiduMapKit', '~>4.1.1'
+pod 'WechatOpenSDK'
+pod 'UMCShare/UI'
+# 集成微信(精简版0.2M)
+pod 'UMCShare/Social/ReducedWeChat'
+pod 'UMCShare/Social/QQ'
+#环信sdk
+pod 'Hyphenate'
+
+#Using AFNetworking (3.2.1)
+#Using BaiduMapKit (4.1.1)
+#Using Hyphenate (3.5.1)
+#Using IQKeyboardManager (6.2.0)
+#Using JCore (1.2.5)
+#Using JPush (3.1.1.1)
+#Using MBProgressHUD (1.1.0)
+#Using MJExtension (3.0.15.1)
+#Using MJRefresh (3.1.15.7)
+#Using Masonry (1.1.0)
+#Using RegexKitLite (4.0)
+#Using SDCycleScrollView (1.75)
+#Using SDWebImage (4.4.2)
+#Using TZImagePickerController (3.0.9)
+#Using UMCCommon (1.5.2)
+#Using UMCShare (6.9.4)
+#Using WechatOpenSDK (1.8.3)
+
+
+end

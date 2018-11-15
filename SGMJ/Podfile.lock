@@ -1,0 +1,111 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (4.1.1)
+  - DZNEmptyDataSet (1.8.1)
+  - Hyphenate (3.5.1)
+  - IQKeyboardManager (6.2.0)
+  - JCore (1.2.5)
+  - JPush (3.1.1.1):
+    - JCore (~> 1.2.5)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
+  - RegexKitLite (4.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - TZImagePickerController (3.0.9)
+  - UMCCommon (1.5.2)
+  - UMCShare/Core (6.9.4):
+    - UMCCommon
+  - UMCShare/Social/QQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+    - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedQQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/UI (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - WechatOpenSDK (1.8.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.2.0)
+  - BaiduMapKit (~> 4.1.1)
+  - DZNEmptyDataSet
+  - Hyphenate
+  - IQKeyboardManager
+  - JPush
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - RegexKitLite
+  - SDWebImage
+  - TZImagePickerController
+  - UMCShare/Social/QQ
+  - UMCShare/Social/ReducedWeChat
+  - UMCShare/UI
+  - WechatOpenSDK
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - BaiduMapKit
+    - DZNEmptyDataSet
+    - Hyphenate
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - RegexKitLite
+    - SDWebImage
+    - TZImagePickerController
+    - UMCCommon
+    - UMCShare
+    - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BaiduMapKit: 51bba432a28316680676b4d453a70e5031f3a7eb
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Hyphenate: 02e3934f1bef0c25e6e5f46bd0940df740922957
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  JCore: 14706de2640b25fb77dbd02332696491407f37c9
+  JPush: 25dd9013fbe106082c14f9f30a82364ee98852fb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  TZImagePickerController: ea3e906af8caa7088f612ad673feb73cc6aa6bfc
+  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCShare: aa233aecad67979930fe43f3a2f676023b669439
+  WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
+
+PODFILE CHECKSUM: d67364144409ff7ec1688ec827496fec18825a4a
+
+COCOAPODS: 1.5.0

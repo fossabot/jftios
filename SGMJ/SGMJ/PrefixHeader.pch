@@ -1,0 +1,203 @@
+//
+//  PrefixHeader.pch
+//  SGMJ
+//
+//  Created by 数荟科技 on 2018/3/15.
+//  Copyright © 2018年 数荟科技. All rights reserved.
+//
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+///Users/shuhuikeji/Desktop/SVN/SGMJ/  SGMJ/Lib/Helper
+
+// 定义这个常量，就可以不用在开发过程中使用"mas_"前缀。
+//#define MAS_SHORTHAND
+// 定义这个常量，就可以让Masonry帮我们自动把基础数据类型的数据，自动装箱为对象类型。
+//#define MAS_SHORTHAND_GLOBALS
+
+//解决导入EaseUI文件运行报错 Unknown type name NSString
+#ifdef __OBJC__
+
+#import <AVFoundation/AVFoundation.h>           //语音
+#import "Marco.h"
+#import "Const.h"
+#import "API.h"
+
+#import <objc/runtime.h>
+#import "UIView+SHExtension.h"
+#import "UIImage+Image.h"
+#import <AFNetworking.h>
+#import <AFHTTPSessionManager.h>
+#import "SG_HttpsTool.h"
+#import "SG_Singleton.h"
+#import "UIButton+SHButton.h"
+#import <Masonry.h>
+#import "AppDelegate.h"
+#import "NSString+Util.h"
+#import <MBProgressHUD.h>
+#import "MBProgressHUD+MJ.h"
+#import <MJExtension.h>
+#import <IQKeyboardManager.h>
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import "SH_PayUtil.h"
+#import "BAButton.h"
+#import "UIScrollView+SHRefresh.h"
+#import "UIScrollView+SHEmptyData.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+
+
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+
+
+#endif
+
+
+//环信SDK
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#define REDPACKET_AVALABLE
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "EaseUI.h"
+#import <Hyphenate/Hyphenate.h>
+
+#define DEMO_CALL 1
+
+#endif
+
+
+
+
+//  颜色
+
+#define SH_TouMingColor     [[UIColor whiteColor] colorWithAlphaComponent:0]
+#define SH_BlackColor       [UIColor blackColor]
+#define SH_WhiteColor       [UIColor whiteColor]
+#define SH_ClearColor       [UIColor clearColor]
+#define SH_FontSize(F)      [UIFont fontWithName:@"PingFangSC-Regular" size:F]
+#define SH_UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+//#define navColor SHColorFromHex(0x00a9f0)
+#define navColor SHColorFromHex(0x7F93F7)
+#define SHColorFromHex(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0]
+// 获取RGB颜色
+#define SH_RGBA(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:a]
+
+//快捷颜色定义
+#define SH_TitleColor       SHColorFromHex(0x333333)
+#define SH_SubtitleColor    SHColorFromHex(0x666666)
+#define SH_UnusableColor    SHColorFromHex(0x999999)
+#define SH_BlueColor        SHColorFromHex(0x409aff)
+
+#define SH_RedMoneyColor    SHColorFromHex(0xfc3144)
+
+#define SH_GroupBackgroundColor  SHColorFromHex(0xf6f6f6)
+#define SH_SeperatorLineColor    SHColorFromHex(0xe6e6e6)
+
+//快捷字体定义
+#define SH_TitleFont        SH_FontSize(15)
+#define SH_SubTitleFont     SH_FontSize(12)
+#define SH_UnusableFont     SH_FontSize(11)
+
+#define SH_LargeTitleFont   SH_FontSize(16)
+#define SH_MoneyLogoFont    SH_FontSize(14)
+#define SH_MoneyStringFont  SH_FontSize(19)
+
+
+//判断版本的宏定义
+#define SYSTEM_VERSION_GREATER_THAN(v)([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+/***************************适配信息**/
+// iphone4s适配用 4
+#define SH_IPHONE_4S (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)480)<DBL_EPSILON)
+// iphone5适配用 5E 5s
+#define SH_IPHONE_5 (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)568)<DBL_EPSILON)
+// iphone6适配用 7 6s 7s
+#define SH_IPHONE_6 (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)667)<DBL_EPSILON)
+// iphone6Plus适配用  7plus
+#define SH_IPHONE_6Plus (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)736)<DBL_EPSILON)
+// iphoneX 适配用
+#define SH_IPHONE_X (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)812)<DBL_EPSILON)
+
+
+
+#define IS_IPHONE_X (fabs((double)[UIScreen mainScreen].currentMode.size.height) == 2436)
+
+//tabbar高度
+#define TabBar_height (IS_IPHONE_X ? 83 :49)
+
+// iphoneX中tabBar多出来的高度
+#define  SHRemainTabBarH (TabBar_height - 49)
+
+
+
+//状态栏上面安全区域高度
+#define StatusBar_height    ([UIApplication sharedApplication].statusBarFrame.size.height)
+#define Nav_height (StatusBar_height + 44)
+
+// 判断是否为ios11
+#define IOS11 ([[[UIDevice currentDevice]systemVersion] floatValue] >= 11.0)
+
+//打印方法
+#if DEBUG
+#define SHLog(format, ...) NSLog(@"[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#else
+#define SHLog(...);
+#endif
+
+
+//弱引用
+#define SHWeakSelf __weak typeof(self) weakSelf = self;
+
+//边距
+#define SHMarginToEdge  10
+//选中图片的个数限制
+#define SHMaxSelectedPicture    5
+#define SHRowNumPicture         4
+
+//倒计时60.0
+#define SHCountDownSeconds      60
+#define SHPhoneLength           11
+#define SHCodeLength            6
+
+
+
+/**
+ *  通知
+ */
+#define SDCityDidSelectKey              @"SDCityDidSelectKey"
+#define SDCityDidSelectedNotification   @"SDCityDidSelectedNotification"
+#define kNotificationAliPayPaySuccess   @"kNotificationAliPayPaySuccess"
+#define kNotificationWeiXinPayPaySuccess   @"kNotificationWeiXinPayPaySuccess"
+#define kNotificationLoginOutHuanXin        @"kNotificationLoginOutHuanXin"
+#define kNotificationTingRefresh        @"kNotificationTingRefresh"
+#define kNotificationMineRefresh        @"kNotificationMineRefresh"
+
+
+/** App id */
+#define APP_ID @"1316875984"
+
+
+#endif /* PrefixHeader_pch */
+

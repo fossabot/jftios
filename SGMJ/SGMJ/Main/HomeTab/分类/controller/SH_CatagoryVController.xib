@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SH_CatagoryVController">
+            <connections>
+                <outlet property="tableView" destination="b8K-9O-yCA" id="R3c-WR-TlP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uh-7Q-nAg">
+                    <rect key="frame" x="156" y="318" width="62" height="30"/>
+                    <state key="normal" title="重新加载">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loadAgainButtonClick:" destination="-1" eventType="touchUpInside" id="abx-kx-t0c"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b8K-9O-yCA">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="C5O-Ld-TS2"/>
+                        <outlet property="delegate" destination="-1" id="6Xh-XB-3cY"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="b8K-9O-yCA" secondAttribute="bottom" id="4Aj-Kt-abg"/>
+                <constraint firstItem="6uh-7Q-nAg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HyF-yv-3Si"/>
+                <constraint firstAttribute="trailing" secondItem="b8K-9O-yCA" secondAttribute="trailing" id="gQx-le-YaT"/>
+                <constraint firstItem="b8K-9O-yCA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="hLN-Pl-5H7"/>
+                <constraint firstItem="b8K-9O-yCA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hUk-zv-5Hj"/>
+                <constraint firstItem="6uh-7Q-nAg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="piy-xK-Zsa"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
